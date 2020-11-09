@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html Lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./Style.css" >
+        <title>Initiative for the Homeless</title>
+    </head>
+    <body>
+
+        <header>
+            <h1>Rescue the Vagrant</h1>
+            <h2>Helping Helps</h2>
+        </header>
+
+        <div horizontal layout>
+            <fieldset>
+                <legend><h3>Finding Shelters</h3></legend>
+                <p>
+                    <label>Find NJ shelters using County name:</label>
+                    <input type="text" id="town" />
+                </p>
+
+                <button class= "btn" onclick="findShelter()">Find</button> 
+                
+                <textarea 
+
+                    class = "bodytext"
+                    id="output" rows="4" cols="50">
+    
+                </textarea>
+            </fieldset>
+-
+            <fieldset class="info">
+                <legend><h3>Become A Volunteer</h3></legend>
+                <p>
+                    <label>Name:</label>
+                    <input type="text" id="name"/>
+                </p>
+                <p>
+                    <label>Email:</label>
+                    <input class  = "bartext" type="text" id="email" />
+                </p>
+
+                <button class= "btn" id="info-button" onclick="useInfo()">Submit!</button>
+            </fieldset>
+
+            
+
+            <fieldset class="donate">
+
+                <legend><h4>Donate</h4></legend>
+
+                    <label>Any amount is welcome. We use this money to better</label>
+                    <label><br>our impoverished communities and help the homeless. Thank you!<br></label>
+                    <form action="https://www.paypal.com/donate" method="post" target="_top">
+                        <input type="hidden" name="cmd" value="_donations" />
+                        <input type="hidden" name="business" value="aryansharma901@gmail.com" />
+                        <input type="hidden" name="currency_code" value="USD" />
+                        <input type="image" src="https://www.dailytechcloud.com/wp-content/uploads/2019/01/paypal.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" style="border: 0px none ; border-radius: 20px; text-align: start; padding: 0px; height: 150px; margin-left: auto; margin-right: auto;"/>
+                        <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif"  />
+                        </form>
+                    
+            </fieldset>
+        </div>
+       <script src="./test.js"></script>
+
+    </body>
+
+</html>
+
+
+
+            
+            
+            
+f
